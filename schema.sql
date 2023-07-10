@@ -11,4 +11,3 @@ CREATE DATABASE vet_clinic;
     weight_kg decimal
 );
 
-
