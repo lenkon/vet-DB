@@ -1,5 +1,6 @@
 /*Queries that provide answers to the questions from all projects.*/
 -- Following are the SELECT Queries
+
 SELECT * 
 FROM animals 
 WHERE name LIKE '%_mon';
