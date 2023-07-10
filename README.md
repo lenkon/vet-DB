@@ -4,7 +4,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
 
 <a name="readme-top"></a>
 
@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Veternary Clinic] <a name="about-project"></a>
 
-> At this stage I have just created database(vet_clinic) and one table(animals) inside it. Insert some records in animals and wrote some queries to get data conditionally from the table.
+- At this stage I have just created database(vet_clinic) and one table(animals) inside it. Insert some records in animals and wrote some queries to get data conditionally from the table.
 
 **[Veternary Clinic]** is a website which will track the animals history with their names owners and other charectoristics.
 
@@ -67,21 +67,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> DataBase: Postgresql
-
-<!-- <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details> -->
+- DataBase: Postgresql
 
 <details>
 <summary>Database</summary>
@@ -94,8 +80,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[create database]**
 - **[create table]**
 - **[insert data]**
@@ -106,7 +90,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> still to come.
+- still to come.
 
 - [Live Demo Link](<replace-with-your-deployment-URL>)
 
@@ -115,8 +99,6 @@ After you're finished please remove all the comments and instructions!
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -205,8 +187,6 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [@DilsherB](https://github.com/DilsherB)
@@ -218,8 +198,6 @@ Example:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[adding front end]**
 - [ ] **[able to insert data through front end]**
@@ -241,8 +219,6 @@ Feel free to check the [issues page](https://github.com/DilsherB/vet-DB/issues).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project please give a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -250,8 +226,6 @@ If you like this project please give a star.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank microverse and my colleagues at microverse.
 
