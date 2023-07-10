@@ -10,4 +10,3 @@ CREATE DATABASE vet_clinic;
     neutered bool,
     weight_kg decimal
 );
-
