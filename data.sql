@@ -1,4 +1,5 @@
 /* Populate database with sample data. */
+
 -- INSERT data
 
 INSERT INTO animals(
