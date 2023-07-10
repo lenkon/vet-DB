@@ -1,9 +1,3 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -63,19 +57,19 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Veternary Clinic] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> At this stage I have just created database(vet_clinic) and one table(animals) inside it. Insert some records in animals and wrote some queries to get data conditionally from the table.
 
-**[your_project__name]** is a...
+**[Veternary Clinic]** is a website which will track the animals history with their names owners and other charectoristics.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> DataBase: Postgresql
 
-<details>
+<!-- <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
@@ -87,7 +81,7 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
   </ul>
-</details>
+</details> -->
 
 <details>
 <summary>Database</summary>
@@ -102,9 +96,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[create database]**
+- **[create table]**
+- **[insert data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> still to come.
 
 - [Live Demo Link](<replace-with-your-deployment-URL>)
 
@@ -130,6 +124,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
+You must have Postgresql in you machine
 <!--
 Example command:
 
@@ -141,6 +136,10 @@ Example command:
 ### Setup
 
 Clone this repository to your desired folder:
+
+`cd (your folder name)` <br />
+run `git clone https://github.com/DilsherB/vet-DB.git` <br />
+`cd vet-DB`
 
 <!--
 Example commands:
@@ -210,15 +209,9 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@DilsherB](https://github.com/DilsherB)
+- Twitter: [@_brilliantMindz](https://twitter.com/_brilliantMindz)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dilsher-balouch/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,9 +221,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[adding front end]**
+- [ ] **[able to insert data through front end]**
+- [ ] **[able to update data through front end]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -240,7 +233,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/DilsherB/vet-DB/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,7 +243,7 @@ Feel free to check the [issues page](../../issues/).
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project please give a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -260,23 +253,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank microverse and my colleagues at microverse.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -285,7 +262,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
