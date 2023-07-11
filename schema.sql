@@ -14,3 +14,4 @@ ALTER TABLE
   animals
 ADD
   COLUMN species TEXT;
+
