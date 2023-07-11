@@ -56,3 +56,17 @@ BEGIN;
 DELETE FROM animals;
 
 ROLLBACK;
+
+BEGIN;
+
+DELETE FROMv animals
+WHERE date_of_birth > '2022-01-01';
+
+SAVEPOINT DOB;
+
+UPDATE animals
+SET weight_kg = weight_kg * '-1';
+
+ROLLBACK TO SAVEPOINT DOB;
+
+COMMIT;
