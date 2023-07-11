@@ -70,3 +70,6 @@ SET weight_kg = weight_kg * '-1';
 ROLLBACK TO SAVEPOINT DOB;
 
 COMMIT;
+
+SELECT COUNT(name)
+FROM animals;
