@@ -30,7 +30,6 @@ REQUIRED SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -92,8 +91,6 @@ After you're finished please remove all the comments and instructions!
 
 - still to come.
 
-- [Live Demo Link](<replace-with-your-deployment-URL>)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -107,6 +104,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 You must have Postgresql in you machine
+
 <!--
 Example command:
 
@@ -190,7 +188,7 @@ Example:
 👤 **Author1**
 
 - GitHub: [@DilsherB](https://github.com/DilsherB)
-- Twitter: [@_brilliantMindz](https://twitter.com/_brilliantMindz)
+- Twitter: [@\_brilliantMindz](https://twitter.com/_brilliantMindz)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/dilsher-balouch/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
