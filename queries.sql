@@ -73,3 +73,7 @@ COMMIT;
 
 SELECT COUNT(name)
 FROM animals;
+
+SELECT COUNT(name)
+FROM animals
+WHERE escape_attempts = '0';
