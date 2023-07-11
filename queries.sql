@@ -84,3 +84,9 @@ FROM animals;
 SELECT MAX(escape_attempts)
 FROM animals;
 
+SELECT
+    species,
+    MIN(weight_kg),
+    MAX(weight_kg)
+FROM animals
+GROUP BY species;
