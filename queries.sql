@@ -32,6 +32,8 @@ SELECT *
 FROM animals
 WHERE (weight_kg >= '10.4') AND (weight_kg <= '17.3');
 
+-- update queries with transaction
+
 BEGIN;
 
 UPDATE animals
@@ -59,35 +61,48 @@ ROLLBACK;
 
 BEGIN;
 
-DELETE FROMv animals
+DELETE FROM animals
 WHERE date_of_birth > '2022-01-01';
 
 SAVEPOINT DOB;
 
 UPDATE animals
-SET weight_kg = weight_kg * '-1';
+SET weight_kg = weight_kg *-1;
 
 ROLLBACK TO SAVEPOINT DOB;
 
+UPDATE animals
+SET weight_kg = weight_kg*-1
+WHERE weight_kg <0;
+
 COMMIT;
 
-SELECT COUNT(name)
+-- aggregate functions
+
+SELECT COUNT(*)
 FROM animals;
 
-SELECT COUNT(name)
+SELECT COUNT(*)
 FROM animals
 WHERE escape_attempts = '0';
 
 SELECT AVG(weight_kg)
 FROM animals;
 
-SELECT MAX(escape_attempts)
-FROM animals;
+SELECT neutered, MAX(escape_attempts)
+FROM animals
+GROUP BY neutered
+ORDER BY neutered
+DESC LIMIT 1;
 
 SELECT
     species,
     MIN(weight_kg),
     MAX(weight_kg)
+FROM animals
+GROUP BY species;
+
+SELECT species, AVG(escape_attempts)
 FROM animals
 GROUP BY species;
 
