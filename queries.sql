@@ -77,3 +77,7 @@ FROM animals;
 SELECT COUNT(name)
 FROM animals
 WHERE escape_attempts = '0';
+
+SELECT AVG(weight_kg)
+FROM animals;
+
