@@ -77,3 +77,9 @@ SELECT * FROM animals A JOIN species S ON S.id = A.species_id WHERE S.name = 'po
 SELECT name AS animal, full_name AS owner FROM animals A JOIN owners O ON O.id = A.owner_id;
 
 SELECT S.name AS species, COUNT(S.name) FROM animals A JOIN species S ON S.id = A.species_id GROUP BY S.name;
+
+SELECT A.name AS animal, S.name AS species, O.full_name
+FROM animals A 
+JOIN species S ON S.id = A.species_id
+JOIN owners O ON O.id = A.owner_id
+WHERE O.full_name = 'Jennifer Orwell' AND S.name = 'digimon';
