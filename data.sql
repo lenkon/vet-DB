@@ -45,3 +45,11 @@ INSERT INTO
 VALUES
     ('pokemon'),
     ('digimon');
+
+UPDATE
+    animals
+SET
+    species_id = CASE
+        WHEN name LIKE '%mon' THEN 2
+        ELSE 1
+    END;
