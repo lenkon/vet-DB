@@ -24,7 +24,6 @@ CREATE TABLE species(
 );
 
 ALTER TABLE animals ADD PRIMARY KEY(id),
-  DROP COLUMN species;
-
-ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id);
-ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
+  DROP COLUMN species,
+  ADD COLUMN species_id INT REFERENCES species(id),
+  ADD COLUMN owner_id INT REFERENCES owners(id);
