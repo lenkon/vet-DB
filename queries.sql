@@ -71,3 +71,5 @@ SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1
 -- JOIN queries
 
 SELECT name FROM animals A JOIN owners O ON O.id = A.owner_id WHERE O.id = 4;
+
+SELECT * FROM animals A JOIN species S ON S.id = A.species_id WHERE S.id = 2;
