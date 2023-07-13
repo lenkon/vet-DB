@@ -100,23 +100,12 @@ JOIN vets V ON Vi.vet_id = V.id
 WHERE V.name = 'William Tatcher'
 ORDER BY Vi.date_of_visit DESC LIMIT 1;
 
--- two different queries to have animals visit by 'Stephanie Mendez'
-
 SELECT A.name AS animal, V.name AS vet, vi.date_of_visit AS visit_date
 FROM visits Vi
 JOIN vets V ON V.id = Vi.vet_id
 JOIN animals A ON A.id = Vi.animal_id
 WHERE V.name = 'Stephanie Mendez'
 GROUP BY A.name, V.name, Vi.date_of_visit;
-
-SELECT V.name AS vet, COUNT(A.name)
-FROM visits Vi
-JOIN vets V ON V.id = Vi.vet_id
-JOIN animals A ON A.id = Vi.animal_id
-WHERE V.name = 'Stephanie Mendez'
-GROUP BY V.name;
-
--- end of two alternative subqueries
 
 SELECT V.name AS vet,
        CASE
@@ -151,33 +140,11 @@ JOIN vets V ON v.id = Vi.vet_id
 JOIN animals A ON A.id = Vi.animal_id
 ORDER BY Vi.date_of_visit DESC LIMIT 1;
 
--- three different queries to achieve the following
--- "How many visits were with a vet that did not specialize in that animal's species?"
--- first
 SELECT V.name, COUNT(V.name) FROM visits Vi
 FULL JOIN vets V ON v.id = Vi.vet_id
 FULL JOIN specializations SP ON SP.vet_id = v.id
 WHERE SP.vet_id IS NULL
 GROUP BY V.name;
--- second
-SELECT vet_name,
-       COUNT(*) AS num_visits
-FROM visits vi
-JOIN vets v ON v.id = vi.vet_id
-JOIN specializations sp ON sp.vet_id = v.id
-WHERE sp.vet_id IS NULL
-GROUP BY v.name;
--- third
-SELECT vet_name,
-       COUNT(vet_name) AS num_visits
-FROM (
-    SELECT v.name AS vet_name
-    FROM visits vi
-    FULL JOIN vets v ON v.id = vi.vet_id
-    FULL JOIN specializations sp ON sp.vet_id = v.id
-    WHERE sp.vet_id IS NULL
-) AS t
-GROUP BY vet_name;
 
 SELECT V.name AS vet, COUNT(A.species_id),
 CASE
@@ -188,7 +155,6 @@ FROM visits Vi
 FULL JOIN vets V ON v.id = Vi.vet_id
 FULL JOIN specializations SP ON SP.vet_id = v.id
 FULL JOIN animals A on A.id = Vi.animal_id
-WHERE SP.vet_id IS NULL
+WHERE SP.vet_id IS NULL AND V.name = 'Maisy Smith'
 GROUP BY A.species_id, V.name
-ORDER BY COUNT(A.species_id) DESC
-LIMIT 1;
+ORDER BY COUNT(A.species_id) DESC LIMIT 1;
