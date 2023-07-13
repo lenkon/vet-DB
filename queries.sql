@@ -145,3 +145,8 @@ JOIN animals A ON A.id = Vi.animal_id
 WHERE V.name = 'Maisy Smith'
 ORDER BY Vi.date_of_visit LIMIT 1;
 
+SELECT A.name AS animal, A.date_of_birth, A.escape_attempts, A.neutered, A.weight_kg, V.name AS vet, V.age, V.date_of_graduation, Vi.date_of_visit
+FROM visits Vi
+JOIN vets V ON v.id = Vi.vet_id
+JOIN animals A ON A.id = Vi.animal_id
+ORDER BY Vi.date_of_visit DESC LIMIT 1;
