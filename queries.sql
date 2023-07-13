@@ -99,3 +99,19 @@ JOIN animals A ON A.id = Vi.animal_id
 JOIN vets V ON Vi.vet_id = V.id
 WHERE V.name = 'William Tatcher'
 ORDER BY Vi.date_of_visit DESC LIMIT 1;
+
+-- two different queries to have animals visit by 'Stephanie Mendez'
+
+SELECT A.name AS animal, V.name AS vet, vi.date_of_visit AS visit_date
+FROM visits Vi
+JOIN vets V ON V.id = Vi.vet_id
+JOIN animals A ON A.id = Vi.animal_id
+WHERE V.name = 'Stephanie Mendez'
+GROUP BY A.name, V.name, Vi.date_of_visit;
+
+SELECT V.name AS vet, COUNT(A.name)
+FROM visits Vi
+JOIN vets V ON V.id = Vi.vet_id
+JOIN animals A ON A.id = Vi.animal_id
+WHERE V.name = 'Stephanie Mendez'
+GROUP BY V.name;
