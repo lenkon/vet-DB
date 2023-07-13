@@ -178,3 +178,17 @@ FROM (
     WHERE sp.vet_id IS NULL
 ) AS t
 GROUP BY vet_name;
+
+SELECT V.name AS vet, COUNT(A.species_id),
+CASE
+    WHEN A.species_id = 2 THEN 'pokemon'
+    ELSE 'digimon'
+    END AS preferred_speciality
+FROM visits Vi
+FULL JOIN vets V ON v.id = Vi.vet_id
+FULL JOIN specializations SP ON SP.vet_id = v.id
+FULL JOIN animals A on A.id = Vi.animal_id
+WHERE SP.vet_id IS NULL
+GROUP BY A.species_id, V.name
+ORDER BY COUNT(A.species_id) DESC
+LIMIT 1;
