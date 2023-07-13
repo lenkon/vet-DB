@@ -115,3 +115,15 @@ JOIN vets V ON V.id = Vi.vet_id
 JOIN animals A ON A.id = Vi.animal_id
 WHERE V.name = 'Stephanie Mendez'
 GROUP BY V.name;
+
+-- end of two alternative subqueries
+
+SELECT V.name AS vet,
+       CASE
+           WHEN S.name IS NULL THEN 'no speciality'
+           ELSE S.name
+       END AS speciality
+FROM vets V
+LEFT JOIN specializations AS Sp ON V.id = Sp.vet_id
+LEFT JOIN species AS S ON S.id = Sp.species_id;
+
