@@ -92,3 +92,9 @@ SELECT O.full_name AS owner, COUNT(A.name)
 FROM animals A JOIN owners O ON O.id = A.owner_id
 GROUP BY O.full_name
 ORDER BY COUNT(A.name) DESC LIMIT 1;
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+
+SELECT * FROM visits where vet_id = 2;
+
+SELECT * FROM owners where email = 'owner_18327@mail.com';
