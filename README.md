@@ -58,7 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Veternary Clinic] <a name="about-project"></a>
 
-- At this stage I have just created database(vet_clinic) and one table(animals) inside it. Insert some records in animals and wrote some queries to get data conditionally from the table.
+- At this stage I have just created database(vet_clinic) and one table(animals) inside it. Insert some records in animals and wrote some queries to get data conditionally from the table. Improvement done in the queries to perform faster by using the tool `explain analyze` of postgresql.
 
 **[Veternary Clinic]** is a website which will track the animals history with their names owners and other charectoristics.
 
@@ -82,6 +82,7 @@ After you're finished please remove all the comments and instructions!
 - **[create database]**
 - **[create table]**
 - **[insert data]**
+- **[performance made better]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,11 +193,15 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Dilsher**
 
 - GitHub: [@DilsherB](https://github.com/DilsherB)
 - Twitter: [@\_brilliantMindz](https://twitter.com/_brilliantMindz)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/dilsher-balouch/)
+
+👤 **Inoulen**
+
+- GitHub: [@Inoulen](https://github.com/lenkon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
