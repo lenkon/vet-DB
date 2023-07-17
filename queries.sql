@@ -158,3 +158,9 @@ FULL JOIN animals A on A.id = Vi.animal_id
 WHERE SP.vet_id IS NULL AND V.name = 'Maisy Smith'
 GROUP BY A.species_id, V.name
 ORDER BY COUNT(A.species_id) DESC LIMIT 1;
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+
+SELECT * FROM visits where vet_id = 2;
+
+SELECT * FROM owners where email = 'owner_18327@mail.com';
