@@ -132,7 +132,8 @@ Example commands:
 
 ### Install
 
-Install this project with:
+Install this project with: <br />
+`npm i`
 
 <!--
 Example command:
@@ -145,7 +146,13 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command: <br />
+
+<ol>
+  <li>copy schemas one by one and run to create database and tables</li>
+  <li>copy data quries one by one and run to insert data into tables</li>
+  <li>copy quries one by one and run to see the results</li>
+</ol>
 
 <!--
 Example command:
