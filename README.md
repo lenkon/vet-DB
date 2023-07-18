@@ -212,6 +212,7 @@ Example:
 - [ ] **[adding front end]**
 - [ ] **[able to insert data through front end]**
 - [ ] **[able to update data through front end]**
+- [ ] **[database schema diagram]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
